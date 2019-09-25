@@ -1,6 +1,6 @@
 {
   "device":"mobile",
-  "page":"4",
+  "page":"2",
   "loginURL":"https://jsonplaceholder.typicode.com/posts",
   "rateURL":"https://jsonplaceholder.typicode.com/posts",
   "styles":{
