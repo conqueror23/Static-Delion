@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html data-n-head-ssr>
+  <head>
+    <title>delion</title>
+    <meta data-n-head="ssr" charset="utf-8" />
+    <meta
+      data-n-head="ssr"
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="description"
+      name="description"
+      content="Delion UI 2.0 project"
+    />
+    <base href="./" />
+    <link rel="preload" href="./_nuxt/189b09b66614a3c02205.js" as="script" />
+    <link rel="preload" href="./_nuxt/634d66701ca011f7deda.js" as="script" />
+    <link rel="preload" href="./_nuxt/cad189100cec50c2d05f.js" as="script" />
+    <link rel="preload" href="./_nuxt/af5de63e36b87e4b9f90.js" as="script" />
+    <link rel="preload" href="./_nuxt/7545f81b840d36406cd1.js" as="script" />
+    <link rel="preload" href="./_nuxt/39650318edac71df7204.js" as="script" />
+    <style
+      data-vue-ssr-id="709e561f:0 b998e542:0 29b1461f:0 3191d5ad:0 7a43a7c3:0 1e413e82:0 5828f159:0 a12edfe8:0"
+    >
+      @font-face {
+        font-family: raleway;
+        src: url(_nuxt/fonts/d003da0.eot) format("eot"),
+          url(_nuxt/fonts/e2a42f1.woff) format("woff"),
+          url(_nuxt/fonts/044df69.ttf) format("truetype");
+      }
+      @font-face {
+        font-family: rockwen;
+        src: url(_nuxt/fonts/4f8ba28.ttf) format("truetype");
+      }
+      * {
+        font-family: raleway;
+      }
+      html {
+        background: #221f20;
+      }
+      body {
+        margin: 0 !important;
+      }
+      #__layout,
+      #__nuxt,
+      body {
+        height: 100vh;
+      }
+      .logo {
+        background: #fff;
+      }
+      .cross_flex {
+        display: flex;
+        display: -webkit-flex;
+      }
+      .cross_flex_column {
+        flex-direction: column;
+      }
+      .cross_flex1 {
+        flex: 1;
+      }
+      .cross_flex_nowrap {
+        flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+      }
+      .cross_flex_wrap {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+      }
+      .full-height {
+        height: 100%;
+      }
+      .padding-lr {
+        padding: 0 2em;
+      }
+      input {
+        border-radius: 0;
+        -webkit-appearance: none;
+      }
+      input[type="radio"] {
+        border-radius: auto;
+        -webkit-appearance: radio;
+      }
+      textarea {
+        border-radius: 0;
+        -webkit-appearance: none;
+        font-size: 1.5em;
+        height: 30%;
+      }
+      .input-text {
+        width: 70%;
+        margin-top: 0.8em;
+        height: 2.7em;
+        padding: 0.9em;
+        background: #221f20;
+        border: 1px solid #80673a;
+        box-sizing: border-box;
+      }
+      .button {
+        padding: 0 1.5em;
+        width: 15em;
+        height: 3.5em;
+        font-size: 0.7em;
+        margin-top: 0.5em;
+        background: #80673a;
+        font-weight: bolder;
+        text-align: center;
+        align-items: center;
+        text-transform: uppercase;
+        border: none;
+      }
+      .button:disabled {
+        font-weight: bolder;
+        color: #5a5656;
+        background: #7a766c;
+      }
+      a:visited {
+        color: #fff;
+      }
+      h3 {
+        margin-top: 2em;
+        text-transform: uppercase;
+        font-weight: bolder;
+      }
+      .bold {
+        font-weight: 700;
+      }
+      .container {
+        justify-items: center;
+      }
+      .main-section {
+        justify-content: space-between;
+        padding: 0 2em;
+        background-size: cover;
+      }
+      .main-section hr {
+        margin-top: 1.5em;
+        width: 90%;
+        border: 0.1em solid hsla(0, 0%, 100%, 0.2);
+      }
+      footer {
+        color: #85847f !important;
+        width: 100%;
+        font-size: 0.7em;
+      }
+      .container,
+      .main-section {
+        height: 100%;
+      }
+      .show-pop {
+        display: block;
+        opacity: 1 !important;
+        z-index: 100 !important;
+      }
+      .p-upper {
+        margin-top: -0.1em;
+        margin-bottom: 1.5em;
+      }
+      .reminder input {
+        margin-top: 2em;
+      }
+      [dir="ltr"] .check-row {
+        text-align: left !important;
+      }
+      [dir="rtl"] .check-row {
+        text-align: right !important;
+      }
+      .input-group > div:first-child,
+      .input-group > div:nth-child(2) {
+        width: 48.5% !important;
+      }
+      .error-msg p {
+        margin-top: 0.2em !important;
+        margin-bottom: 0 !important;
+        color: #000;
+      }
+      #note-wrapper h4 {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      @media screen and (max-width: 300px) {
+        html {
+          font-size: 70%;
+        }
+      }
+      @media screen and (min-width: 769px) {
+        html {
+          font-size: 1.4em;
+        }
+        .logo {
+          height: 16em;
+          align-items: center;
+        }
+        #unRegistered {
+          flex-direction: row;
+          flex-wrap: nowrap;
+          text-align: center;
+        }
+        #unRegistered > div {
+          padding: 0 2em;
+          display: flex;
+          flex: 1;
+        }
+        #unRegistered form {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+        }
+        .main-section hr {
+          margin-top: 2em;
+          height: 90%;
+          width: 0;
+          border: 0.1em solid hsla(0, 0%, 100%, 0.2);
+        }
+        .check-row {
+          flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+        }
+        .check-mark {
+          height: 1.2em !important;
+          width: 1.2em !important;
+        }
+        .check-container {
+          padding-left: 1.3em !important;
+        }
+        .check-container .check-mark:after {
+          left: 0.35em !important;
+          top: -0.1em !important;
+          width: 0.4em !important;
+          height: 1em !important;
+        }
+        .check-row p {
+          margin-top: 1.8em !important;
+          font-size: 0.6em !important;
+        }
+        .check-content {
+          font-size: 1em;
+        }
+        .input-text {
+          width: 95% !important;
+        }
+        .input-group {
+          display: flex !important;
+          display: -webkit-flex;
+          flex-direction: row !important;
+          flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          align-items: flex-start;
+          text-align: justify;
+          padding-left: 0;
+        }
+        .input-group div {
+          width: 100%;
+        }
+        .form-header p {
+          height: 2.5em;
+          font-size: 0.7em;
+        }
+        #unsatisfied {
+          line-height: normal !important;
+          width: 50% !important;
+        }
+        .main-section {
+          height: 100% !important;
+        }
+        #login-type h3 {
+          font-size: 2em;
+        }
+        #login-type a {
+          justify-content: center;
+          align-items: center;
+        }
+        #login-type > div {
+          width: 80%;
+        }
+        #login-type footer {
+          position: absolute;
+          bottom: 0;
+          width: auto;
+        }
+        .error-msg {
+          width: 94.5% !important;
+        }
+        .error-msg p {
+          font-size: 0.7em;
+        }
+        #popup {
+          overflow-y: none !important;
+        }
+      }
+      @media screen and (min-width: 769px) and (min-width: 1024px) {
+        #unRegistered > div {
+          display: flex;
+          flex: 1;
+        }
+        #rating-wrapper {
+          justify-content: center;
+        }
+        .logo {
+          flex: 1;
+          height: 100%;
+        }
+        .container {
+          flex-direction: row !important;
+        }
+        .content-part,
+        .reminder {
+          justify-content: center;
+        }
+      }
+      #logo-promo-overall {
+        font-size: 0.8em;
+        border-radius: 4px;
+      }
+      #logo-promo-overall h3 {
+        margin: 0 !important;
+      }
+      #logo-promo-head {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        display: flex;
+        background: #000;
+        margin: 0 2em;
+        padding: 0.3em;
+      }
+      #logo-promo-title {
+        flex: 1;
+        font-weight: 700;
+        padding: 1.2em;
+        font-size: 1em;
+      }
+      #logo-promo-sticker {
+        position: relative;
+        float: right;
+        top: 0.6em;
+        left: 1.05em;
+      }
+      #logo-promo-sticker svg {
+        float: right;
+      }
+      #logo-promo-type {
+        color: #fff;
+        font-weight: 700;
+        background: #dc4a54;
+        padding: 0.5em 1.7em;
+      }
+      #logo-promo-content {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        margin: 0 2em;
+        padding: 1em;
+        background: #fff;
+      }
+      #logo-promo-content p {
+        margin-top: 0;
+      }
+      #logo-promo-content span {
+        font-weight: 700;
+      }
+      .check-container {
+        align-items: center;
+        position: relative;
+        padding-left: 2em;
+        margin-bottom: 0.5em;
+        cursor: pointer;
+        font-size: 1.2em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .check-container input {
+        left: -0.4em;
+        top: -1.55em;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 3.6em;
+        width: 3.6em;
+      }
+      .check-mark {
+        border: 0.05em solid #80673a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.69em;
+        width: 1.69em;
+        transition: 0.4s;
+      }
+      .check-container input:checked ~ .check-mark,
+      .check-container:hover input ~ .check-mark,
+      .check-mark {
+        background-color: #221f20;
+      }
+      .check-mark:after {
+        content: "";
+        left: 0.3em;
+        color: #80673a;
+        position: absolute;
+        display: none;
+      }
+      .check-container input:checked ~ .check-mark:after {
+        display: block;
+      }
+      .check-container input:focus ~ .check-mark {
+        border: 0.05em solid #80673a;
+      }
+      .check-container .check-mark:after {
+        left: 0.6em;
+        top: -0.3em;
+        width: 0.5em;
+        height: 1.5em;
+        border: solid #80673a;
+        border-width: 0 0.1em 0.2em 0;
+        transform: rotate(45deg);
+        transition: 0.4s;
+      }
+      [dir="ltr"] .check-content {
+        text-align: left;
+      }
+      [dir="rtl"] .check-content {
+        text-align: right;
+      }
+      .check-content {
+        margin-left: 0.2em;
+        font-size: 0.7em;
+        margin-top: -0.2em;
+      }
+      .center-align {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      @media screen and (min-width: 330px) and (max-width: 380px) {
+        .check-content {
+          margin-top: 0.5em;
+          font-size: 0.7em;
+        }
+      }
+      @media screen and (min-width: 380px) {
+        .check-content {
+          margin-top: 0.5em;
+          font-size: 0.8em;
+        }
+      }
+      @media screen and (min-width: 380px) and (min-width: 700px) {
+        .check-content {
+          margin-top: 0.2em;
+        }
+      }
+      .nuxt-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        opacity: 1;
+        transition: width 0.1s, opacity 0.4s;
+        background-color: #fff;
+        z-index: 999999;
+      }
+      .nuxt-progress.nuxt-progress-notransition {
+        transition: none;
+      }
+      .nuxt-progress-failed {
+        background-color: red;
+      }
+      #app {
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        height: 100vh;
+        justify-content: center;
+        justify-items: center;
+      }
+      .logo {
+        justify-content: center;
+        align-content: center;
+      }
+      .logo img {
+        padding: 1.5em 0;
+      }
+      p[data-v-01e5b19f] {
+        color: #000;
+        text-align: justify;
+      }
+      #terms-body[data-v-01e5b19f] {
+        padding: 1em;
+      }
+      #terms-body h3[data-v-01e5b19f] {
+        color: #000 !important;
+      }
+      #terms-body input[data-v-01e5b19f] {
+        font-weight: bolder;
+        left: 90%;
+        top: 5%;
+        border: none;
+        background: inherit;
+      }
+      #popup[data-v-01e5b19f],
+      #terms-body input[data-v-01e5b19f] {
+        position: absolute !important;
+      }
+      #popup[data-v-01e5b19f] {
+        background: #fff;
+        border: 2px solid grey;
+        opacity: 0;
+        overflow-x: none;
+        overflow-y: scroll;
+        margin: 0 3.5em;
+        height: 60%;
+        z-index: -1;
+        transition: 1s ease;
+      }
+      @media screen and (min-width: 1024px) {
+        #popup[data-v-01e5b19f] {
+          margin-top: 0;
+        }
+      }
+      .reminder {
+        flex-wrap: nowrap;
+        line-height: 1.5;
+        min-width: 100%;
+      }
+      .reminder input {
+        height: 3.5em !important;
+      }
+      @media only screen and (max-width: 379px) {
+        .reminder input {
+          margin-top: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt">
+      <!---->
+      <div id="__layout">
+        <div class="cross_flex cross_flex_column cross_flex1 full-height">
+          <div
+            class="cross_flex cross_flex_column cross_flex1 full-height container"
+          >
+            <div class="logo cross_flex">
+              <center>
+                <img src="/img/ap-logo-02.png" alt="logo not found" />
+              </center>
+            </div>
+            <div
+              class="main-section cross_flex cross_flex_column cross_flex1 cross_flex_nowrap"
+            >
+              <div data-v-01e5b19f>
+                <div
+                  class="v-portal"
+                  style="display:none"
+                  data-v-01e5b19f
+                ></div>
+                <div id="popup" data-v-01e5b19f>
+                  <div class="vue-portal-target" data-v-01e5b19f></div>
+                </div>
+              </div>
+              <div class="cross_flex cross_flex_column cross_flex1">
+                <div class="reminder cross_flex cross_flex_column cross_flex1">
+                  <h3>reminder : no somking</h3>
+                  <p class="p-upper">
+                    Please do not smoke in the apartments. This can result in a
+                    fire alarm and a $150 room cleaning charge.
+                  </p>
+                  <div>
+                    <label class="check-container cross_flex"
+                      ><input type="checkbox" />
+                      <span class="check-mark"></span>
+                      <div class="check-content">
+                        I have read and agree to this message.
+                      </div></label
+                    >
+                  </div>
+                  <input
+                    type="button"
+                    value="Continue"
+                    disabled
+                    class="button"
+                  />
+                </div>
+              </div>
+              <footer>
+                <center><p>Provided by Delion</p></center>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__NUXT__ = (function(
+        e,
+        i,
+        t,
+        a,
+        o,
+        n,
+        r,
+        s,
+        u,
+        l,
+        m,
+        c,
+        d,
+        p,
+        g,
+        v,
+        h,
+        f,
+        b,
+        y,
+        q,
+        w,
+        x
+      ) {
+        return {
+          layout: "default",
+          data: [{}],
+          error: null,
+          state: {
+            loginURL: x,
+            rateURL: x,
+            device: "desktop",
+            logo: {
+              logoExtra: "logoPromo",
+              note: e,
+              promoTitle: e,
+              promoContent: e
+            },
+            page: "3",
+            styles: {
+              general: {
+                html_background: "#221f20",
+                btn_background: "#80673a",
+                logo_background: i,
+                input_font: i
+              },
+              pages: {
+                rate: {
+                  starDefaultColor: i,
+                  starRatedColor: "#80673A",
+                  arrowColor: i
+                }
+              }
+            },
+            contents: {
+              commons: {
+                logo: { url: "/img/ap-logo-02.png" },
+                terms:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero soluta rerum mollitia nesciunt, nulla dolores. Commodi architecto neque dolor at consectetur sunt ullam suscipit laudantium nam blanditiis! Quos voluptas a excepturi ullam accusantium optio culpa at explicabo maxime accusamus, dolore maiores! Quod, ducimus! Consequuntur minima quidem suscipit earum, repellat placeat beatae dolor temporibus commodi consequatur deserunt doloremque amet? Officiis fugiat illum, accusantium harum unde sequi esse aspernatur. Porro molestias enim accusantium reiciendis natus nam! Quisquam natus, nisi vel sapiente fugiat possimus harum atque similique sunt accusamus odio, voluptate iusto eius inventore? Asperiores inventore molestiae, ut amet deserunt, iste laboriosam labore saepe magni ipsam, rem adipisci itaque! Iusto, consectetur sit provident voluptates inventore obcaecati eum similique quia ducimus beatae, perferendis natus temporibus, labore doloremque. Earum voluptas ipsum amet soluta pariatur culpa inventore in? Dolor totam voluptatem animi numquam tenetur qui magni enim dignissimos impedit. Aliquid facilis ad omnis officiis minus, dolorem dolor velit, similique in aspernatur exercitationem ullam sed atque facere quasi ipsa totam. Obcaecati hic quisquam vitae! Nostrum, quia assumenda incidunt nam enim culpa hic? Accusamus id quo vitae dolore suscipit odio numquam maiores itaque, doloremque alias. Blanditiis officia obcaecati modi recusandae laboriosam. Ad, quasi eaque? Dolores, quas sunt?"
+              },
+              loginPortals: [
+                { url: "/loginDesktopAbodeFree", name: y },
+                { url: "/loginDesktopAbodePaid", name: "paid Wifi" },
+                { url: "#", name: "visitor" },
+                { url: "#", name: "Conference visitor" }
+              ],
+              regist: {
+                serviceParams: {
+                  paidWifi: !0,
+                  paidParams: {
+                    title: "Paid Wifi",
+                    loginNote:
+                      "Please login below if you have purchased a WIFI plan.",
+                    checkAgreement: p,
+                    loginBtn: "Login"
+                  },
+                  freeParams: {
+                    loginNote: "Please login with your details below:",
+                    title: y,
+                    checkAgreement: p,
+                    loginBtn: "Guest Login"
+                  }
+                },
+                inputboxes: [
+                  {
+                    index: "lastName",
+                    type: "text",
+                    value: e,
+                    placeholder: "Last Name"
+                  },
+                  {
+                    index: "roomNumber",
+                    type: "number",
+                    value: e,
+                    placeholder: "Room Number"
+                  },
+                  { index: h, type: h, value: e, placeholder: "Email Address" }
+                ]
+              },
+              logged: {
+                loggedTitle: "you are now connected",
+                loggedMsg: "You may continue to browser online"
+              },
+              rate: {
+                backTile: "welcome back",
+                rateContent: e,
+                rateMsg:
+                  "Before you connect to our WiFi service, we’d love to hear about your experience at Alex Perry so far.",
+                apologizMsg:
+                  " We`re sorry that you aren`t completely happy and we`d love to help.",
+                surveyQst: "Can you please tell us more?",
+                contactQry: "Can we get in touch to help solve your issue?",
+                contactBtn: "Yes,please contact me",
+                noContactBtn: "No thanks",
+                noRateMsg: "I don`t want to rate",
+                rateMethod: "stars",
+                rates: [
+                  {
+                    id: 1,
+                    render: c,
+                    title: "the tile of free text page",
+                    content: " the main content of free txt page"
+                  },
+                  {
+                    id: 2,
+                    render: c,
+                    title: "the tile of free text page ",
+                    content:
+                      " the main content of free txt page which can be very very long here and it shouw"
+                  },
+                  {
+                    id: 3,
+                    render: d,
+                    title: "multiplce choice title",
+                    content: r,
+                    choices: [
+                      { id: 1, value: g },
+                      { id: 2, value: v },
+                      { id: 3, value: m },
+                      { id: 4, value: b },
+                      { id: 5, value: q }
+                    ]
+                  },
+                  {
+                    id: 4,
+                    render: "displayMessage",
+                    title: "diplayed Message title",
+                    content: r
+                  },
+                  {
+                    id: 5,
+                    render: d,
+                    title: "multiple choice  title",
+                    content: r,
+                    choices: [
+                      { id: 1, value: g },
+                      { id: 2, value: v },
+                      { id: 3, value: m },
+                      { id: 4, value: b },
+                      { id: 5, value: q }
+                    ]
+                  }
+                ]
+              },
+              rated: {
+                feedbackTitle: "we values your feedback",
+                feedbackContent:
+                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nam, eaque architecto delectus autem, doloremque reiciendis quidem debitis pariatur, molestiae sequi veniam!",
+                loginStatus:
+                  "You are now connected and may continue to browse online.",
+                continueBtn: "CONTINUE & CONNECT"
+              },
+              reminder: {
+                reminderTitle: "reminder : no somking",
+                reminderBody:
+                  "Please do not smoke in the apartments. This can result in a fire alarm and a $150 room cleaning charge.",
+                reminderBtn: "Continue",
+                checkContent: "I have read and agree to this message."
+              },
+              promo: {
+                promoStyle: "small",
+                promoParams: {
+                  title: "Sunday Night Pizza Party",
+                  what: "Free pizza, pots of beer and live music.",
+                  where: "In the city. ",
+                  when: "Bus departs 8:00pm.",
+                  src: "#"
+                }
+              },
+              wifiPlan: {
+                perks: [
+                  {
+                    name: e,
+                    volumn: "UMLIMITED",
+                    price: "$59.95",
+                    expire: "28",
+                    devices: "2"
+                  },
+                  {
+                    name: e,
+                    volumn: "240GB",
+                    price: "$39.95",
+                    expire: "28",
+                    devices: "2"
+                  },
+                  {
+                    name: e,
+                    volumn: "120GB",
+                    price: "$24.95",
+                    expire: "14",
+                    devices: "2"
+                  }
+                ],
+                paymentMethod: [
+                  { name: "rapidSSl", url: "/img/rapidssl.png" },
+                  { name: "masterCard", url: "/img/mastercard.png" },
+                  { name: "visa", url: "/img/visa.png" }
+                ]
+              }
+            },
+            validation: []
+          },
+          serverRendered: !0
+        };
+      })(
+        "",
+        "white",
+        0,
+        0,
+        0,
+        0,
+        "the main content you want to shows in display message part",
+        0,
+        0,
+        0,
+        "option3",
+        "freeText",
+        "multipleChoice",
+        "By connecting to our WIFI you agree our",
+        "option1",
+        "option2",
+        "email",
+        0,
+        "option4",
+        "Free Wifi",
+        "option5",
+        0,
+        "https://jsonplaceholder.typicode.com/posts"
+      );</script
+    ><script src="./_nuxt/189b09b66614a3c02205.js" defer></script
+    ><script src="./_nuxt/7545f81b840d36406cd1.js" defer></script
+    ><script src="./_nuxt/39650318edac71df7204.js" defer></script
+    ><script src="./_nuxt/634d66701ca011f7deda.js" defer></script
+    ><script src="./_nuxt/cad189100cec50c2d05f.js" defer></script
+    ><script src="./_nuxt/af5de63e36b87e4b9f90.js" defer></script>
+  </body>
+
+</html>
